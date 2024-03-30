@@ -36,7 +36,7 @@ python run.py --RUN='train' --DATASET='vqa' --MODEL='mcan_small' --RESUME=True -
 1. Multi-GPU Training:
 Add `--GPU='0, 1, 2, 3...'` after the training scripts.
 ```bash
-python3 run.py --RUN='train' --DATASET='vqa' --MODEL='mcan_small' --GPU='0,1,2,3'
+python run.py --RUN='train' --DATASET='vqa' --MODEL='mcan_small' --GPU='0,1,2,3'
 ```
 The batch size on each GPU will be divided into `BATCH_SIZE/GPUs` automatically.
 **Online Testing**
